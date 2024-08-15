@@ -1,0 +1,167 @@
+nav{
+  border: solid;
+  width: 98%;
+  height: 75px;
+  padding: 5px;
+  background-color:rgb(157, 196, 230);
+  color:rgb(255, 255, 255);
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid black;
+  border-radius: 200px;
+
+}
+.logo{
+  height: 100px;
+  width: 100px;
+  border: 0px solid;
+}
+.menu_bar{
+  width:55%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  transition: 2s;
+}
+.menu_bar:hover{
+transform:scale(1.2);
+z-index:2;
+}
+.menu_bar li{
+  margin-left: 20px;
+}
+.menu_bar li a{
+  font-size: 19px;
+  color: black;
+  text-decoration: none;
+}
+.menu_bar li a:hover{
+  color:rgb(120, 133, 137);
+  opacity: 0.5;
+}
+.search_bar{
+  display: flex;
+  align-items: center;
+  border: solid rgb(157, 196, 230);
+  border-radius: 5px;
+
+}
+.search_bar form{
+  display: flex;
+}
+.search_bar input{
+  padding: 10px;
+  border:5px solid white;
+}
+
+.button{
+  display: flex;
+  font-size: large;
+}
+
+.profile {
+  position: absolute;
+  bottom: 210px;
+  left: 125px;
+  border: 3px solid black;
+}
+
+.blurb {
+  position: absolute;
+  top: 785px;
+  border: 2px solid black;
+  padding: 10px
+}
+
+.bio {
+  position: absolute;
+  top: 735px;
+}
+
+.socialsLogos1 {
+  position: absolute;
+  left: 710px;
+  top: 150px;
+}
+
+.socialsLogo2 {
+  position: absolute;
+  left: 710px;
+  top: 360px;
+}
+
+.socials {
+  position: absolute;
+  left: 710px;
+  top: 85px;
+}
+
+.socialsLogo3 {
+  position: absolute;
+  left: 710px;
+  top: 560px;
+}
+
+.projects {
+  position: absolute;
+  top: 85px;
+  left: 1000px;
+}
+
+.project1 img:hover{
+  transform:scale(1.2);
+  z-index:2;
+  transition: transform 0.3s ease;
+}
+
+.project1 {
+  position: absolute;
+  left: 1px;
+  top: 50px;
+}
+
+.project2 img:hover{
+  transform:scale(1.2);
+  z-index:2;
+  transition: transform 0.3s ease;
+}
+
+.project2 {
+  position: absolute;
+  left: 1px;
+  top: 400px;
+}
+
+.project3 img:hover{
+  transform:scale(1.2);
+  z-index:2;
+  transition: transform 0.3s ease;
+}
+
+.project3 {
+  position: absolute;
+  left: 500px;
+  top: 210px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.socialsLogos1 img, .socialsLogo2 img, .socialsLogo3 img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.socialsLogos1 img:hover, .socialsLogo2 img:hover, .socialsLogo3 img:hover {
+  animation: bounce 0.5s;
+}
+
